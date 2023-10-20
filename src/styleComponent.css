@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 1em;
+    padding: 2em;
+    width: 98vw;
+}
+
+h1 {
+    text-align: center;
+}
+.container {
+    margin: 1em;
+    padding: 1em;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.image {
+    height: 480px;
+    width: 680px;
+    background: #d8caca;
+}
+
+.image p {
+    font-size: 25px;
+    font-weight: 30px;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s ease;
+
+    &.sepia {
+        filter: sepia(100%);
+    }
+
+    &.grayscale {
+        filter: grayscale(100%);
+    }
+   
+    &.border {
+        border: 5px dashed black;
+    }
+
+    &.shadow {
+        box-shadow: 7px 7px 20px 0 rgb(85, 84, 84);
+    }
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.controls button {
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 15px 0;
+
+    &.active {
+        background-color: black;
+        color: white;
+    }
+}
+
+.btn-group button {
+    margin: 0 0 10px 20px;
+    padding: 8px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    
+    &.active {
+        background-color: rgb(40, 64, 144);
+    }
+}
+
+.for-size {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.rotate {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
